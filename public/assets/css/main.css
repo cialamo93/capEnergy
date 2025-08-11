@@ -1,0 +1,213 @@
+.nextTrip ul li {
+  font-size: 16px;
+  font-weight: 700;
+  color: #6c6c6c;
+  line-height: 48px;
+  padding: 0 30px;
+  position: relative;
+  z-index: 5;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  /* El curso era pointer pero el walo lo pidio default el 27-12 */
+  /* cursor: pointer; */
+  width: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-top: 4px;
+  text-transform: uppercase; }
+.nextTrip ul li:last-child {
+margin-right: 0; }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.nextTrip ul li {
+  font-size: 14px;
+  padding: 0 26px; } }
+@media (max-width: 767px) {
+.nextTrip ul li {
+  font-size: 14px;
+  padding: 0 22px;
+  line-height: 42px; } }
+  /* .nextTrip ul li::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, #0067f4 0%, #2bdbdc 100%);
+    background: -o-linear-gradient(left, #0067f4 0%, #2bdbdc 100%);
+    background: linear-gradient(to right, #0067f4 0%, #2bdbdc 100%);
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; }
+  .nextTrip ul li:hover, .nextTrip ul li.active {
+    color: #fff; }
+    .nextTrip ul li:hover::before, .nextTrip ul li.active::before {
+      opacity: 1; } */
+.fixed-box {
+position: fixed;
+bottom: 55px; /* Distancia desde el borde inferior */
+right: 10px; /* Distancia desde el borde derecho */
+width: 150px; /* Ancho del cuadro */
+/* background-color: rgba(0, 0, 0, 0.8); */
+color: white; /* Letra blanca */
+padding: 10px;
+text-align: center;
+/* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); */
+border-radius: 10px;
+z-index: 100;
+}
+
+.fixed-box form {
+display: flex;
+flex-direction: column; /* Formulario en columna */
+}
+
+.fixed-box input[type="email"] {
+padding: 8px;
+margin-bottom: 10px; /* Espacio entre el input y el botón */
+border: none;
+border-radius: 4px;
+}
+
+.fixed-box button {
+background-color: transparent;
+/* color: white; */
+border: none;
+border-radius: 4px;
+padding: 8px 20px;
+}
+
+/* .fixed-box img {
+max-width: 50%;
+} */
+
+@media (max-width: 767px) {
+.fixed-box {
+    position: fixed;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+    right: 10px; /* Ajusta la distancia desde el lado izquierdo */
+    height: ;
+    width: calc(30% - 20px); /* Ancho total menos el espacio de margen */
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 1px; /* Espaciado interno */
+}
+.features-area {
+  margin-top: 30rem;
+}
+}
+.close-button {
+position: absolute;
+top: 5px;
+right: 5px;
+cursor: pointer;
+}
+
+.team-image img {
+width: 100%; /* Establece el ancho al 100% del contenedor */
+height: 400px; /* Establece una altura fija */
+object-fit: cover; /* Ajusta la imagen manteniendo la relación de aspecto y cubriendo el contenedor */
+}
+
+.slider-image video {
+position: relative;
+left: 5rem
+}
+
+
+/* PRUEBa */
+.video-container {
+position: relative;
+height: 100vh;
+}
+
+.fullscreen-video {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.overlay-text {
+position: absolute;
+top: 75%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+font-size: 24px;
+}
+/* PRUEBA */
+
+#video-background {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: -1;
+}
+.ticker-container {
+overflow: hidden;
+background-color: #333;
+color: #fff;
+padding: 10px;
+}
+
+.ticker-list {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+animation: tickerMove 30s linear infinite;
+}
+
+.ticker-list li {
+margin-right: 20px;
+white-space: nowrap;
+}
+
+@keyframes tickerMove {
+0% {
+  transform: translateX(100%);
+}
+100% {
+  transform: translateX(-100%);
+}
+}
+
+.newsCard {
+height: 100% !important;
+box-shadow: 0px 3px 14px rgb(0 0 0 / 27%);
+}
+
+.newsCard .card {
+border: none;
+}
+
+.single-features {
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+
+.features-content {
+margin-top: auto;
+}
+
+#services .single-features .features-content .text {
+font-size: 18px;
+line-height: 20px;
+color: #121212;
+margin-top: 0;
+}
